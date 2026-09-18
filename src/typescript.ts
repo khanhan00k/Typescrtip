@@ -37,4 +37,4 @@ data = 100;
 let result: string | number = "Farm Aura";
 result = 6767;
 //literal: chi nhan 1 gia tri
-let dpSomething: "success" | "error" = "success";
+let dpSomething: "succes" | "error" = "succes";
