@@ -2,4 +2,10 @@
 function chuvihcn(chieudai, chieurong) {
     return (chieudai + chieurong) * 2;
 }
-console.log(chuvihcn(3, 4));
+console.log(chuvihcn(6, 4));
+
+function dientich(chieudai, chieurong) {
+    return chieudai * chieurong;
+}
+console.log(dientich(6, 7));
+

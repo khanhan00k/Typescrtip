@@ -3,4 +3,9 @@ function chuvihcn(chieudai: number, chieurong: number) {
   return (chieudai + chieurong) * 2;
 }
 
-console.log(chuvihcn(3, 4));
+console.log(chuvihcn(6, 4));
+
+function dientichhcn(chieudai: number, chieurong: number) {
+    return chieudai * chieurong;
+}
+console.log(dientichhcn(6, 7));
