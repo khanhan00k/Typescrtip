@@ -1,20 +1,20 @@
-//function
+// function
 function sum(a: number, b: number) {
   return a + b;
 }
-sum(5, 6);
+console.log(sum(5, 6)); 
 
 function Aura(name: string) {
-    return "Bá Khí" + name;
+  return name + " Bá Khí " ;
 }
-Aura("Khánh An");
+console.log(Aura("Khánh An")); 
 
-function HiBaKhi(name: string) :void{
-    console.log("Xin chào" +name);
+function HiBaKhi(name: string): void {
+  console.log("Xin chào " + name);
 }
+HiBaKhi("Khánh An ba khí");
 
-//arrow function
-const sum2 = (a: number, b: number) => {
-    return a + b;
-}
-sum2(3,6);
+// arrow function
+const sum2 = (a: number, b: number) => a + b;
+
+console.log(sum2(3, 6));
