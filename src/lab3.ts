@@ -31,11 +31,34 @@ const sayHelloPerson = (name?: string) => {
 }
 console.log(sayHelloPerson());
 
+const creatUser = (name: string, age?: number) => {
+  return `Tên: ${name}, Tuổi: ${age}`;
+}
+console.log(creatUser("Skibidi", 67));
+//...vô hạn tham số
+
+const callSkibidi = (...skibidi: number[])=>{
+  console.log(skibidi);
+}
+ callSkibidi(67,6,7);
+
+ const arr1 = [1,2,3,4,5];
+ const arr2 = [6,7,8,9,10];
+ const arr3 = [...arr1, ...arr2];
+ console.log(arr3);
+
+ const name = ["Khanh An"];
+ const age = [18];
+ const aura = ["Bá Khí"];
+ const user = [...name, ...age, ...aura];
+ console.log(user);
+ 
+//Bai tập
 // bai1
-const averageScore = (...scores: number[]): number =>{
-  const tong = scores.reduce((tong, diem)=> tong + diem, 0);
-  return tong  / scores.length;
-};
+function averageScore(...scores: number[]): number {
+  const tong = scores.reduce((tong, diem) => tong + diem, 0);
+  return tong / scores.length;
+}
 console.log(averageScore(10,7,9,7));
 
 //bai 2
@@ -54,3 +77,9 @@ function Users(name: string, age: number): string{
   return `Tên: ${name}, Tuổi: ${age}`;
 }
 console.log(Users("Khánh An", 18));
+
+//bai 4
+const Apple = ["Iphone 18", "Macbook Pro 2024", "Ipad Pro 2024"];
+const Samsung = ["Samsung Galaxy S24", "Samsung Galaxy Tab S9", "Samsung Galaxy Book3"];
+const mergeProducts = [...Apple, ...Samsung];
+console.log(mergeProducts);
