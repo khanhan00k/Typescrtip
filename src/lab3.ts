@@ -37,4 +37,8 @@ const check: ChanLe = (n: number) =>{
 console.log(check(2));
 console.log(check(3));
 
-  
+//bai 3
+function Users(name: string, age: number): string{
+  return `Tên: ${name}, Tuổi: ${age}`;
+}
+console.log(Users("Khánh An", 18));
