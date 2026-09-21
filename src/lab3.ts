@@ -18,3 +18,23 @@ HiBaKhi("Khánh An ba khí");
 const sum2 = (a: number, b: number) => a + b;
 
 console.log(sum2(3, 6));
+
+// bai1
+const averageScore = (...scores: number[]): number =>{
+  const tong = scores.reduce((tong, diem)=> tong + diem, 0);
+  return tong  / scores.length;
+};
+console.log(averageScore(10,7,9,7));
+
+//bai 2
+type ChanLe = (n: number) => string;
+const check: ChanLe = (n: number) =>{
+  if(n % 2 === 0){
+    return "Số chẵn";
+  }
+  return "Số lẻ";
+}
+console.log(check(2));
+console.log(check(3));
+
+  
