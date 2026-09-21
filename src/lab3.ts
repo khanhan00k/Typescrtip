@@ -16,8 +16,20 @@ HiBaKhi("Khánh An ba khí");
 
 // arrow function
 const sum2 = (a: number, b: number) => a + b;
-
 console.log(sum2(3, 6));
+
+// arrow function with default parameter
+const sayHelloSkibidi = (user = "Khanh An")=>{
+    return user;
+};
+console.log(sayHelloSkibidi());
+console.log(sayHelloSkibidi("Skibidi"));
+
+//ontional parameter
+const sayHelloPerson = (name?: string) => {
+  return name;
+}
+console.log(sayHelloPerson());
 
 // bai1
 const averageScore = (...scores: number[]): number =>{
